@@ -1,0 +1,709 @@
+<!-- HELLO
+-
+DevFolio is a minimal, clean, lightweight and fully responsive template for Devlopers!
+Created by Anil Seervi.
+-
+GitHub repo: https://github.com/AnilSeervi/DevFolio
+README: https://github.com/AnilSeervi/DevFolio/blob/master/README.md
+-
+Have fun creating your portfolio on this template!!! -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title: add your Portfolio websites's title here -->
+    <title>[Pablo Grossi García] | Videogame Developer</title>
+
+    <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
+    <meta name="keywords" content="[username], [name], skill" />
+
+    <!-- Improve your SEO by adding a small descrption of you -->
+    <meta name="description" content="Pablo Grossi García | Videogame Developer" />
+
+    <!-- Add a your png Logo to the assets folder and change the href attr accordingly  -->
+    <link rel="icon" type="image/png" href="./assets/devfolio-logo.png" />
+
+    <!-- Add your primary-theme color for the value of content -->
+    <meta name="theme-color" content="#af25df" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <!-- Fill content with the URL of this portfolio you'll host -->
+    <meta property="og:url" content="https://devfolio.js.org/" />
+    <!-- Fill content with the title of your portfolio(Recommended to use what you put in <title> tag) -->
+    <meta property="og:title" content="Pablo Grossi García | Videogame Developer" />
+    <!-- Give a short description that'll show up when you/someone shares your portfolio on different platform -->
+    <meta property="og:description" content="Made using DevFolio Template" />
+    <!-- Add a thumbnail image in assets folder and fill the content attr with URL to that thumbnail 
+      so that a thumbnail image of your portfolio is shown while shared on other platform -->
+    <meta
+      property="og:image"
+      content="https://devfolio.js.org/assets/devfolio.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <!-- Again fill content attr with the URL of this portfolio you'll host -->
+    <meta property="twitter:url" content="https://devfolio.js.org" />
+    <!-- Recommended to use the same text used within <title> element -->
+    <meta property="twitter:title" content="Pablo Grossi García | Videogame Developer" />
+    <!-- short description that shows up while your portfolio is shared -->
+    <meta
+      property="twitter:description"
+      content="Made using DevFolio Template"
+    />
+    <!-- Fill content with the URL to the thumbnail image that you'll put in the assets folder -->
+    <meta
+      property="twitter:image"
+      content="https://anilseervi.vercel.app/assets/devfolio.png"
+    />
+
+    <!-- link tags -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="./javascript/scrollreveal.min.js"></script>
+    <script
+      defer
+      type="text/javascript"
+      src="./javascript/scrollveal.js"
+    ></script>
+
+    <!-- Remove Google Analytics once you have your portfolio website set-up -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-122228201-4"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-122228201-4");
+    </script>
+    <!-- End of Google Analytics -->
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <div id="hero">
+      <section class="container">
+        <h1 class="hero-title">
+          Hi, my name is <span class="text-color-main name">Pablo Grossi Garcia</span>
+          <br />
+          I'm a cool videogame developer.
+        </h1>
+        <p class="hero-cta">
+          <a class="cta-btn cta-btn--hero" href="#about">Get in touch</a>
+        </p>
+      </section>
+      <a href="#about" class="scroll-down-link" aria-label="scroll-down">
+        <div class="scroll-down"></div
+      ></a>
+    </div>
+    <!-- /END Hero Section -->
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="row about-wrapper">
+          <div class="about-wrapper__image">
+            <img
+              class="img-fluid"
+              src="./assets/Yo-2.jpg"
+              alt="Profile Image"
+            />
+          </div>
+          <div class="about-wrapper__info">
+            <p class="about-wrapper__info-text">
+              I am a passionate developer, mostly focused on Programming, although I also work with Pixel Art, but I wouldn't consider myself an artist.
+              I have a Degree in Videogame Development and Master studies on Artificial Intelligence, as well as several Indie projects finished,
+              using different tools, engines and programming languages.
+            </p>
+            <span class="about-wrapper__cta">
+              <a href="#" class="cta-btn cta-btn--resume">View Resume</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END About Section -->
+
+    <!--Projects Section-->
+    <section id="projects">
+      <div class="container">
+        <div class="project-wrapper">
+          <h2 class="section-title dark-red-text">My Projects</h2>
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">District Dance Battle</h3>
+              <p class="project-wrapper__text-info">
+                District Dance Battle is a rhythm game where you get to play as Perico, an awesome dancer from Murcia who travels to Madrid to fight in a dance battle against the best dancers in the city. 
+              </p>
+              <p>• Developed as part of the Projects 2 subject of the Degree in Videogame Development at Universidad Complutense de Madrid</p>
+              <p>• Awarded as Best Game by the Audience at FIMP 2019</p>
+              <p>• Made with SDL2 and C++</p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="https://freestylers-studio.itch.io/district-dance-battle-sdl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >Itch.io</a
+                >
+                <a href="#" target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="https://freestylers-studio.itch.io/district-dance-battle-sdl" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/DDB-2.jpg"
+                    class="img-fluid"
+                    alt="Project Image"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Mauriçius Nativitatem</h3>
+              <p class="project-wrapper__text-info">
+                Mauriçius Nativitatem is a rhythm game inspired by Patapon (the player is given patterns that have to be repeated in order to succeed).
+                In this game, you will have to help Mauriçius, our fishy protagonist,
+                in order to be able to perform the dark ritual he needs so that he can bring his son to life.
+              </p>
+              <p>• Developed as part of the JamOn 2021, with "Birth" as theme</p>
+              <p>• Awarded as the 2nd Best Game in the JamOn 2021</p>
+              <p>• Built with Unity and C#</p>
+
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="https://freestylers-studio.itch.io/mauricius-nativitatem"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >Itch.io</a
+                >
+                <a href="#" target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="https://freestylers-studio.itch.io/mauricius-nativitatem" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/mauricius.jpg"
+                    class="img-fluid"
+                    alt="Project Image"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">TeFeGe</h3>
+              <p class="project-wrapper__text-info">
+                TeFeGe is an online multiplayer shooter, with a Top Down perspective, 
+                in which the player will be able to choose from 5 different characters, to be paired with an opponent in a 3 round duel. 
+                The game was part of a project in Matchmaking Research, so most of the focus was put into measuring the abilities of the player, 
+                based on the performance shown, and the consequent ranking and matchmaking of the players.
+              </p>
+              <p>
+                • Developed as part of the Final Degree Project subject of the Degree in Videogame Development at Universidad Complutense de Madrid, focusing on Matchmaking
+              </p>
+              <p>• Built with Unity and C#, as well as Mirror for the server side</p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="https://tefege.itch.io/tefege"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >Itch.io</a
+                >
+                <a href="#" target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="https://tefege.itch.io/tefege" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/TFG.png"
+                    class="img-fluid"
+                    alt="Project Image"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">FDI: Federal Department of Investigation</h3>
+              <p class="project-wrapper__text-info">
+                FDI (Federal Department of Investigations) is a narrative adventure game in which the player takes control of Eurico, 
+                a student of the Computer Science Faculty (which serves as the game scenery, with a few adaptations for story and humour purposes), 
+                who is involved as a witness in a murder, leading to a bigger investigation to solve the mystery. 
+              </p>
+
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="https://freestylers-studio.itch.io/fdi"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >Itch.io</a
+                >
+                <a href="#" target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="https://freestylers-studio.itch.io/fdi" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/fdi.jpg"
+                    class="img-fluid"
+                    alt="Project Image"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Motor Casa Paco</h3>
+              <p class="project-wrapper__text-info">
+                Motor Casa Paco is a 3D Game Engine built with C++ in a 4-month span. Thanks to its component-based architecture and data-driven structure, 
+                once a basic project core is established, it is easy to add more content to the project.
+              </p>
+              <p>• Developed as part of the Projects 3 subject of the Degree in Videogame Development at Universidad Complutense de Madrid</p>
+              <p>• Built with Ogre3D (Core), Bullet Physics (Physics), FMOD (Sound), CEGUI (UI) and C++</p>
+
+              <div class="project-wrapper__text-btns">
+                <a href="https://github.com/freesstylers/Untitled-Motor" target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="https://github.com/freesstylers/Untitled-Motor" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/motor casa paco.jpg"
+                    class="img-fluid"
+                    alt="Project Image"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Vaya Canicastañazos</h3>
+              <p class="project-wrapper__text-info">
+                Vaya Canicastañazos is a 3D platform game in which the player will be controlling a marble through 16 different levels, 
+                with 3 different collectables each. Inspired by Monkey Ball, you will need to be careful not to fall from the level 
+                to avoid unnecesary restarts. 
+              </p>
+              <p>• Developed as part of the Projects 3 subject of the Degree in Videogame Development at Universidad Complutense de Madrid</p>
+              <p>• Built with Motor Casa Paco (Custom Game Engine based on Ogre3D) and C++</p>
+
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="https://freestylers-studio.itch.io/vaya-canicastanhazos"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >Itch.io</a
+                >
+                <a href="#" target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="https://freestylers-studio.itch.io/vaya-canicastanhazos" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/vayacanicastañazos.jpg"
+                    class="img-fluid"
+                    alt="Project Image"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">A toda pastilla</h3>
+              <p class="project-wrapper__text-info">
+                A Toda Pastilla is a vertical bullet hell in which the player will be giving pills (shooting) to elder people (enemies), 
+                with the ability to stack different special abilities to overcome the increasing difficulty, 
+                always surrounded by the dynamic music system.
+              </p>
+              <p>• Developed as part of the Projects 3 subject of the Degree in Videogame Development at Universidad Complutense de Madrid</p>
+              <p>• Built with Motor Casa Paco (Custom Game Engine based on Ogre3D) and C++</p>
+
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="https://freestylers-studio.itch.io/a-toda-pastilla"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >Itch.io</a
+                >
+                <a href="#" target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="https://freestylers-studio.itch.io/a-toda-pastilla" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/atodapastilla.jpg"
+                    class="img-fluid"
+                    alt="Project Image"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Lights Off</h3>
+              <p class="project-wrapper__text-info">
+                In a world were the sun has gone off, a special moss that casts light  has been created to supply with the light we  need to survive, but it has mutated
+                and has expanded  through the laboratory. Lights Off is a 2D platformer where you control a robot that has to go deep in an abandoned laboratory filled of creatures infected by this strange moss
+                sensible to light. 
+              </p>
+              <p>• My first game project</p>
+              <p>• Developed as part of the Projects 1 subject of the Degree in Videogame Development at Universidad Complutense de Madrid</p>
+              <p>• Built with Unity and C#</p>
+
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="https://pablogarciagrossi.github.io/Grupo7-Proyecto1/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >Download</a
+                >
+                <a href="https://github.com/PabloGarciaGrossi/Grupo7-Proyecto1" target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="https://pablogarciagrossi.github.io/Grupo7-Proyecto1/" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/Lights Off.png"
+                    class="img-fluid"
+                    alt="Project Image"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Pokemon Bizarre</h3>
+              <p class="project-wrapper__text-info">
+                Pokemon Bizarre is a Pokemon fangame made in RPG maker that tries to offer a crazy and stupid adventure in my own designed world of Pokemon.
+                In it, you can explore the new region of "Quintueles" and his new creatures and regional forms, maintining the main gameplay of the series but adding
+                my own bizarre style.
+              </p>
+              <p>• Developed with RPG maker</p>
+              <p>• Made as a hobby</p>
+
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="https://newpokeliberty.blogspot.com/2018/12/pokemon-bizarre.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >Download</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="https://newpokeliberty.blogspot.com/2018/12/pokemon-bizarre.html" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/pokemonbizarre.jpg"
+                    class="img-fluid"
+                    alt="Project Image"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+
+          
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Out Run</h3>
+              <p class="project-wrapper__text-info">
+                Clone of the classic Out Run game, developed from scratch in a multiplatform project, both for PC and PlayStation 4, including the use of the official SDK and Tools provided by Sony.
+              </p>
+              <p>• Developed as part of the Videogames in Console subject of the Degree in Videogame Development at Universidad Complutense de Madrid</p>
+              <p>• Built with SDL2, C++ and C</p>
+              <p>• Code not available due to NDA</p>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/out run.jpg"
+                    class="img-fluid"
+                    alt="Project Image"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Off the Line</h3>
+              <p class="project-wrapper__text-info">
+                Clone of "Off the Line", developed from scratch in a multiplatform project both for PC and Android, including the use of Android Studio.
+              </p>
+              <p>• Developed as part of the Videogames in Mobile subject of the Degree in Videogame Development at Universidad Complutense de Madrid</p>
+              <p>• Built with Android Studio and Java</p>
+
+              <div class="project-wrapper__text-btns">
+                <a href="https://github.com/PabloGarciaGrossi/Moviles-Practica-1" target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="https://github.com/PabloGarciaGrossi/Moviles-Practica-1" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/off the line.jpg"
+                    class="img-fluid"
+                    alt="Project Image"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Mazes and More</h3>
+              <p class="project-wrapper__text-info">
+                Clone of "Mazes & More", developed with the original game assets in a multiplatform project both for PC and Android.
+              </p>
+              <p>• Developed as part of the Videogames in Mobile subject of the Degree in Videogame Development at Universidad Complutense de Madrid</p>
+              <p>• Built with Unity and C#</p>
+
+              <div class="project-wrapper__text-btns">
+                <a href="https://github.com/PabloGarciaGrossi/Moviles-P2" target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="https://github.com/PabloGarciaGrossi/Moviles-P2" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/mazes&more.png"
+                    class="img-fluid"
+                    alt="Project Image"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Old Souls</h3>
+              <p class="project-wrapper__text-info">
+                Old Souls is a retro version of the famous Action RPG Dark Souls originated as a project for class. The main idea is to take the most 
+                basic elements from the original game and adapt them into the old-school mechanics and aesthetics of the NES console.
+              </p>
+              <p>• Developed with JavaScript and Node.js</p>
+              <p>• Developed as part of the Programming in Interpretated Languages subject of the Degree in Videogame Development at Universidad Complutense de Madrid</p>
+
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="https://pablogarciagrossi.github.io/Old-Souls/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >Play</a
+                >
+                <a href="https://github.com/PabloGarciaGrossi/Old-Souls" target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="https://pablogarciagrossi.github.io/Old-Souls/" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/Old Souls.png"
+                    class="img-fluid"
+                    alt="Project Image"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+        </div>
+      </div>
+    </section>
+    <!-- End Projects Section -->
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-wrapper">
+          <p class="contact-wrapper__text">pablogarciagrossi@gmail.com</p>
+          <a href="#" class="cta-btn cta-btn--resume">Curriculum Vitae</a>
+        </div>
+      </div>
+    </section>
+    <!-- END Contact Section -->
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="container">
+        <a href="#hero" class="back-to-top" aria-label="go back to top">
+          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+        </a>
+        <div class="social-links">
+          <a
+            href="#!"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="twitter"
+          >
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a
+            href="#!"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="instagram"
+          >
+            <i class="fa fa-instagram"></i>
+          </a>
+          <a
+            href="#!"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="codepen"
+          >
+            <i class="fa fa-codepen"></i>
+          </a>
+          <a
+            href="#!"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="linkedin"
+          >
+            <i class="fa fa-linkedin"></i>
+          </a>
+          <a
+            href="#!"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="github"
+          >
+            <i class="fa fa-github"></i>
+          </a>
+        </div>
+        <hr />
+        <p class="footer__text">
+          &copy; <span id="year"></span> - Template by
+          <a
+            href="https://github.com/AnilSeervi"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Anil Seervi</a
+          >. <br />Made with &hearts;
+        </p>
+      </div>
+    </footer>
+    <!-- END Footer Section -->
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script src="./javascript/vanilla-tilt.min.js"></script>
+    <script type="text/javascript" src="./javascript/valtilt.js"></script>
+  </body>
+</html>
